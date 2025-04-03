@@ -1,38 +1,73 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+In this project, I developed an e-commerce platform that integrates with Firebase Firestore, a cloud-based NoSQL database. The goal was to create a scalable and real-time data-driven application that allows users to register, log in, and manage product listings with full CRUD (Create, Read, Update, Delete) functionality.
 
-{Provide a description of the software that you wrote and how it integrates with a Cloud Database. Describe how to use your program.}
+This software provides a seamless experience for users to add, update, and delete products while keeping data synchronized across multiple devices through Firestore's real-time capabilities. Additionally, real-time notifications inform users of any changes to the database.
 
-{Describe your purpose for writing this software.}
+This software provides a seamless experience for users to add, update, and delete products while keeping data synchronized across multiple devices through Firestore's real-time capabilities. Additionally, real-time notifications inform users of any changes to the database.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
+1. To use this program:
 
-[Software Demo Video](http://youtube.link.goes.here)
+2. Register a new account using an email and password.
+
+3. Log in with valid credentials to access and manage products.
+
+4. Add new products to the database with relevant d
+
+[Software Demo Video](https://youtu.be/80dL73KdJWU)
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
+The project utilizes Firebase Firestore, a cloud-based NoSQL database by Google. Firestore supports real-time data syncing, making it an excellent choice for applications requiring immediate updates across multiple users.
 
-{Describe the structure of the database that you created.}
+Users Collection: Stores user authentication details such as email and UID.
+
+Products Collection: Contains product listings with attributes such as:
+
+name: Product name
+
+description: Product description
+
+price: Product price
+
+user_id: The owner of the product listing
+
+Real-time Listeners: Listens for changes in the database and notifies users of updates in the product collection.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+        Tools Used:
 
-{Describe the programming language that you used and any libraries.}
+Programming Language: Python
+
+Cloud Database: Firebase Firestore
+
+Authentication: Firebase Authentication (via Firebase Admin SDK)
+
+        Libraries Used:
+
+firebase-admin for Firestore database operations and authentication
+
+time for handling time delays
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Wikipedia Cloud database](https://en.wikipedia.org/wiki/Cloud_database)
+- [Firebase](https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ)
+- [Google Cloud Console](https://console.cloud.google.com/welcome?invt=Abtx3w&project=commanding-fact-450907-e8)
 
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
 
-- Item 1
-- Item 2
-- Item 3
+- Implement frontend authentication using Firebase Authentication SDK.
+
+- Improve user interface by integrating a web or mobile frontend.
+
+- Add image upload functionality for product listings.
+
+- Enhance error handling for better user experience.
+
+- Implement role-based access control (RBAC) to limit permissions based on user roles.
