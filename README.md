@@ -6,13 +6,17 @@ This software provides a seamless experience for users to add, update, and delet
 
 This software provides a seamless experience for users to add, update, and delete products while keeping data synchronized across multiple devices through Firestore's real-time capabilities. Additionally, real-time notifications inform users of any changes to the database.
 
-1. To use this program:
+    To use this program:
 
-2. Register a new account using an email and password.
+1. Register a new account using an email and password.
 
-3. Log in with valid credentials to access and manage products.
+2. Log in with valid credentials to access and manage products.
 
-4. Add new products to the database with relevant d
+3. Add new products to the database with relevant details.
+
+4. Update or delete existing product listings.
+
+5. Receive real-time updates whenever changes occur in the product collection.
 
 [Software Demo Video](https://youtu.be/80dL73KdJWU)
 
